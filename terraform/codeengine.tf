@@ -1,5 +1,5 @@
 data "ibm_resource_group" "pg_resource_group" {
-  name = "default"
+  name = "Default"
 }
 
 resource "ibm_code_engine_project" "pgadmin_code_engine" {
