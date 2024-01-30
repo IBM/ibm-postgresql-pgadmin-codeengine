@@ -1,5 +1,6 @@
 data "ibm_resource_group" "pg_resource_group" {
   name = "Default"
+  #this is sometimes "default" and sometimes "Default", depending on the account. So if you get an error, try the other one
 }
 
 resource "ibm_code_engine_project" "pgadmin_code_engine" {
